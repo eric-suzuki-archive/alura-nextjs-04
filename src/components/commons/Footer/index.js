@@ -1,6 +1,9 @@
+import { getCMSContent } from '../../../infra/cms/CMSProvider';
 import { Box, Text, Link, theme } from '../../../theme/components';
 
-export function Footer({ description }) {
+export function Footer() {
+  // console.log(getCMSContent('contentFaqQuestiona'));
+  const description = getCMSContent('globalContent.globalFooter.description');
   return (
     <Box
       tag="footer"
